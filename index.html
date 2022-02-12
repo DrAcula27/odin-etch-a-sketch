@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="shortcut icon" type="image/png" href="./img/etch-a-sketch_icon.png">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./script.js" defer></script>
+    <!--font-awesome import for icons-->
+    <script src="https://kit.fontawesome.com/940af2685d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="flex-container">
+        <h1 class="title">etch-a-sketch!</h1>
+        <div class="content">
+            <div class="etch-a-sketch-grid"></div>
+            <div class="buttons">
+                <button class="blackButton" onclick="changeColor('black')">Black</button>
+                <button class="rainbowButton" onclick="changeColor('rainbow')">Rainbow</button>
+                <button class="erasorButton" onclick="changeColor('white')">Erasor</button>
+                <button class="resetButton" onclick="resetGrid()">Reset</button>
+            </div>
+            <div class="error">
+                Please choose a grid size between 2 and 64
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+          ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          | Crafted with <i class="fa-solid fa-heart"></i> by DrAcula27 |
+        </p>
+        <a href="https://github.com/DrAcula27" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>
